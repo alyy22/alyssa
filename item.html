@@ -51,10 +51,53 @@
             background-color: #333;
             color: white;
             text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #f8b400;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* Feedback Form Styling */
+        .feedback-form {
+            background-color: #444;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        .feedback-form h2 {
+            text-align: center;
+        }
+        .feedback-form label {
+            font-weight: bold;
+            display: block;
+            text-align: left;
+        }
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 90%;
             padding: 10px;
-            position: absolute;
-            bottom: 0;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .feedback-form button {
+            background-color: #f8b400;
+            color: black;
+            padding: 10px;
             width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .feedback-form button:hover {
+            background-color: #ffa500;
         }
     </style>
 </head>
@@ -87,10 +130,80 @@
             <img src="img/item4.jpg" alt="Item 4">
             <p>Dress - $35</p>
         </div>
+        <div class="item">
+            <img src="img/item5.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+        <div class="item">
+            <img src="img/item6.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+        <div class="item">
+            <img src="img/item7.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+        <div class="item">
+            <img src="img/item8.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+        <div class="item">
+            <img src="img/item9.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+        <div class="item">
+            <img src="img/item10.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+        <div class="item">
+            <img src="img/item11.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+        <div class="item">
+            <img src="img/item12.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+        <div class="item">
+            <img src="img/item13.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+        <div class="item">
+            <img src="img/item14.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+        <div class="item">
+            <img src="img/item15.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+        <div class="item">
+            <img src="img/item16.jpg" alt="Item 4">
+            <p>Dress - $35</p>
+        </div>
+
     </section>
     
-    <footer>
+     <footer>
+        <div class="feedback-form">
+            <h2>Give Us Your Feedback</h2>
+            <form action="submit_feedback.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
         <p>&copy; 2025 Boutique Shop. All Rights Reserved.</p>
+        <p>Follow us on: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </p>
+        <p>Contact us: <a href="mailto:info@boutiqueshop.com">info@boutiqueshop.com</a></p>
     </footer>
 </body>
 </html>
