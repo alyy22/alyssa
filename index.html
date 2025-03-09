@@ -31,11 +31,11 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 20px;
+            padding: 30px;
         }
         .gallery img {
-            width: 200px;
-            height: 250px;
+            width: 300px;
+            height: 350px;
             margin: 10px;
             border-radius: 10px;
         }
@@ -43,14 +43,58 @@
             text-align: center;
             padding: 20px;
         }
+        /* Footer Styling */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #f8b400;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* Feedback Form Styling */
+        .feedback-form {
+            background-color: #444;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        .feedback-form h2 {
+            text-align: center;
+        }
+        .feedback-form label {
+            font-weight: bold;
+            display: block;
+            text-align: left;
+        }
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 90%;
             padding: 10px;
-            position: absolute;
-            bottom: 0;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .feedback-form button {
+            background-color: #f8b400;
+            color: black;
+            padding: 10px;
             width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .feedback-form button:hover {
+            background-color: #ffa500;
         }
     </style>
 </head>
@@ -73,11 +117,41 @@
             <img src="img/img3.jpg" alt="Boutique Item 2">
             <img src="img/img2.jpg" alt="Boutique Item 3">
             <img src="img/img4.jpg" alt="Boutique Item 4">
+            <img src="img/img5.jpg" alt="Boutique Item 5">
+            <img src="img/img6.jpg" alt="Boutique Item 6">
+            <img src="img/img7.jpg" alt="Boutique Item 7">
+            <img src="img/img8.jpg" alt="Boutique Item 8">
+            <img src="img/img9.jpg" alt="Boutique Item 9">
+            <img src="img/img10.jpg" alt="Boutique Item 10">
+            <img src="img/img11.jpg" alt="Boutique Item 11">
+            <img src="img/img12.jpg" alt="Boutique Item 12">
+
         </div>
     </section>
-    
+
     <footer>
+        <div class="feedback-form">
+            <h2>Give Us Your Feedback</h2>
+            <form action="submit_feedback.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
         <p>&copy; 2025 Boutique Shop. All Rights Reserved.</p>
+        <p>Follow us on: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </p>
+        <p>Contact us: <a href="mailto:info@boutiqueshop.com">info@boutiqueshop.com</a></p>
     </footer>
 </body>
 </html>
